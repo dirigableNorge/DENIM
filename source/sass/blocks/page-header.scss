@@ -1,0 +1,23 @@
+.page-header {
+  background-color: white;
+}
+
+.page-header__nav {
+  padding: 25px 0;
+}
+
+.page-header__nav-wrapper {
+  display: flex;
+}
+
+.page-header__logo-link {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__nav-wrapper {
+    position: relative;
+  }
+}
