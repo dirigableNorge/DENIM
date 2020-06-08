@@ -32,3 +32,22 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .site-nav--index {
+    position: absolute;
+    top: calc(100% + 50px);
+    left: 45px;
+    flex-direction: row;
+
+    .site-nav__item {
+      margin-right: 35px;
+    }
+  }
+
+  .site-nav__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}

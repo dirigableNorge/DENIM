@@ -55,3 +55,29 @@
     height: 18px;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .user-nav--index {
+    position: absolute;
+    top: calc(100% + 50px);
+    right: 45px;
+    flex-direction: row;
+    align-items: center;
+
+    .user-nav__item {
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+    }
+
+    .user-nav__link--basket {
+      width: 20px;
+      height: 18px;
+    }
+
+    .user-nav__link--search {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

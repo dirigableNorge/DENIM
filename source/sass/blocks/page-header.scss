@@ -7,6 +7,7 @@
 }
 
 .page-header__nav-wrapper {
+  position: relative;
   display: flex;
 }
 
@@ -17,7 +18,4 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header__nav-wrapper {
-    position: relative;
-  }
 }
