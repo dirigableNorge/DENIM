@@ -1,3 +1,127 @@
 .index-intro {
   background-color: $main-grey;
 }
+
+.index-intro__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.index-intro__next-button {
+  align-self: flex-end;
+  display: block;
+  width: 10px;
+  height: 27px;
+  font-size: 0;
+  line-height: 0;
+  background-image: url("../img/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.index-intro__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-intro__socials {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width - 1px) {
+
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .index-intro__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .index-intro__next-button {
+    margin-right: 160px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.75;
+    }
+  }
+
+  .index-intro__container {
+    margin-right: 67px;
+  }
+
+  .index-intro__slogan {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 18px;
+    color: $grey;
+  }
+
+  .index-intro__name {
+    margin-bottom: 50px;
+  }
+
+  .index-intro__image-container {
+    position: relative;
+    margin-right: 104px;
+
+    .index-intro__image {
+      position: relative;
+      z-index: 2;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      z-index: 0;
+      width: 232px;
+      height: 176px;
+      background-image: url('../img/decor1.png');
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      right: -50px;
+      z-index: 1;
+      width: 232px;
+      height: 176px;
+      background-image: url('../img/decor2.png');
+    }
+  }
+
+  .index-intro__socials {
+    align-self: flex-end;
+    flex-direction: column;
+  }
+
+  .index-intro__socials-item:not(:last-child) {
+    margin-bottom: 35px;
+  }
+
+  .index-intro__socials-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: $main-dark;
+
+    &:hover,
+    &:focus {
+      opacity: 0.75;
+    }
+  }
+}

@@ -2,6 +2,22 @@
   margin: 0 auto;
 }
 
+@media (min-width: $mobile-width ) and (max-width: $tablet-width - 1px) {
+  .wrapper {
+    min-width: $mobile-width;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .wrapper {
+    max-width: $tablet-width;
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .wrapper {
     max-width: $desktop-width;
@@ -10,18 +26,3 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .wrapper {
-    max-width: $tablet-width;
-    padding-right: 45px;
-    padding-left: 45px;
-  }
-}
-
-@media (min-width: $mobile-width) {
-  .wrapper {
-    min-width: $mobile-width;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
