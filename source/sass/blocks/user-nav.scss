@@ -81,3 +81,29 @@
     }
   }
 }
+
+@media (max-width: $tablet-width - 1px) {
+  .user-nav--index {
+    position: absolute;
+    top: calc(100% + 50px);
+    right: 15px;
+    flex-direction: row;
+    align-items: center;
+
+    .user-nav__item {
+      &:not(:last-child) {
+        margin-right: 25px;
+      }
+    }
+
+    .user-nav__link--basket {
+      width: 18px;
+      height: 16px;
+    }
+
+    .user-nav__link--search {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
