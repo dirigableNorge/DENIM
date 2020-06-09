@@ -12,7 +12,8 @@
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
   .wrapper {
-    max-width: $tablet-width;
+    min-width: $tablet-width;
+
     padding-right: $tablet-padding;
     padding-left: $tablet-padding;
   }

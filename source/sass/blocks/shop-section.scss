@@ -1,7 +1,6 @@
 .shop-section .wrapper {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 .shop-section__title {
@@ -19,8 +18,11 @@
   line-height: 18px;
   text-align: center;
   color: $main-dark;
+
   border-bottom: 2px solid $main-dark;
 }
+
+//mobile
 
 @media (max-width: $tablet-width - 1px) {
   .shop-section .wrapper {
@@ -45,14 +47,26 @@
   }
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+//tablet
 
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .shop-section .wrapper {
+    padding-top: 100px;
+  }
+
+  .shop-section__view-all-button {
+    margin-bottom: 60px;
+  }
 }
+
+//desktop
 
 @media (min-width: $desktop-width) {
   .shop-section .wrapper {
     padding-top: 130px;
   }
 
-
+  .shop-section__view-all-button {
+    margin-bottom: 70px;
+  }
 }

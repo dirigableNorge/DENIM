@@ -1,9 +1,15 @@
 .catalog {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
+  margin-left: -30px;
   padding: 0;
   list-style: none;
+}
+
+.catalog__item {
+  margin-left: 30px;
 }
 
 .catalog__name {
@@ -23,12 +29,7 @@
 }
 
 @media (max-width: $tablet-width - 1px) {
-  .catalog {
-    margin-left: -30px;
-  }
-
   .catalog__item {
-    margin-left: 30px;
     margin-bottom: 20px;
   }
 
@@ -40,13 +41,36 @@
 
   .catalog__name {
     margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .catalog__price {
+    font-size: 14px;
+    line-height: 14px;
   }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .catalog__item {
+    margin-bottom: 50px;
+  }
 
+  .catalog__image {
+    width: 324px;
+    height: 349px;
+    margin-bottom: 25px;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .catalog__name {
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: $desktop-width) {
-
+  .catalog__item{
+    margin-bottom: 50px;
+  }
 }
