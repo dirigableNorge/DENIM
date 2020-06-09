@@ -16,7 +16,7 @@
   .site-nav--index {
     position: absolute;
     top: calc(100% + 50px);
-    left: 98px;
+    left: $desktop-padding;
     flex-direction: column;
 
     .site-nav__item {
@@ -36,7 +36,7 @@
   .site-nav--index {
     position: absolute;
     top: calc(100% + 50px);
-    left: 45px;
+    left: $tablet-padding;
     flex-direction: row;
 
     .site-nav__item {
@@ -49,7 +49,7 @@
   .site-nav--index {
     position: absolute;
     top: calc(100% + 50px);
-    left: 15px;
+    left: $mobile-padding;
     flex-direction: row;
 
     .site-nav__item {

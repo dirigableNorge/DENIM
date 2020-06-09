@@ -25,6 +25,40 @@
   flex-direction: column;
 }
 
+
+.index-intro__slogan {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 18px;
+  color: $grey;
+}
+
+.index-intro__image-container {
+  position: relative;
+
+  .index-intro__image {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    background-image: url('../img/decor1.png');
+    background-size: contain;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background-image: url('../img/decor2.png');
+    background-size: contain;
+  }
+}
+
 .index-intro__socials {
   display: flex;
   margin: 0;
@@ -32,8 +66,51 @@
   list-style: none;
 }
 
-@media (min-width: $mobile-width) and (max-width: $tablet-width - 1px) {
+@media (max-width: $tablet-width - 1px) {
+  .index-intro__wrapper {
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
 
+  .index-intro__next-button {
+    display: none;
+  }
+
+  .index-intro__container {
+    order: 1;
+  }
+
+  .index-intro__name {
+    margin-bottom: 40px;
+  }
+
+  .index-intro__image-container {
+    margin-bottom: 50px;
+
+    &::before {
+      top: -20px;
+      left: -20px;
+      width: 109px;
+      height: 80px;
+    }
+
+    &::after {
+      bottom: -20px;
+      right: -20px;
+      width: 109px;
+      height: 80px;
+    }
+  }
+
+  .index-intro__image {
+    width: 202px;
+    height: 249px;
+  }
+
+  .index-intro__socials {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
@@ -60,47 +137,25 @@
     margin-right: 67px;
   }
 
-  .index-intro__slogan {
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 18px;
-    color: $grey;
-  }
-
   .index-intro__name {
     margin-bottom: 50px;
   }
 
   .index-intro__image-container {
-    position: relative;
     margin-right: 104px;
 
-    .index-intro__image {
-      position: relative;
-      z-index: 2;
-    }
-
     &::before {
-      content: "";
-      position: absolute;
       top: -50px;
       left: -50px;
-      z-index: 0;
       width: 232px;
       height: 176px;
-      background-image: url('../img/decor1.png');
     }
 
     &::after {
-      content: "";
-      position: absolute;
       bottom: -50px;
       right: -50px;
-      z-index: 1;
       width: 232px;
       height: 176px;
-      background-image: url('../img/decor2.png');
     }
   }
 
