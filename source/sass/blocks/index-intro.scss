@@ -34,6 +34,11 @@
   color: $grey;
 }
 
+
+.index-intro__container2 {
+  display: flex;
+}
+
 .index-intro__image-container {
   position: relative;
 
@@ -47,6 +52,7 @@
     position: absolute;
     z-index: 0;
     background-image: url('../img/decor1.png');
+    background-repeat: no-repeat;
     background-size: contain;
   }
 
@@ -55,6 +61,7 @@
     position: absolute;
     z-index: 1;
     background-image: url('../img/decor2.png');
+    background-repeat: no-repeat;
     background-size: contain;
   }
 }
@@ -85,6 +92,7 @@
     margin-bottom: 40px;
   }
 
+
   .index-intro__image-container {
     margin-bottom: 50px;
 
@@ -114,9 +122,66 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .index-intro__wrapper {
+    padding-top: 83px;
+    padding-bottom: 45px;
+  }
 
+  .index-intro__next-button {
+    margin-right: 78px;
+  }
+
+  .index-intro__container {
+    margin-right: 67px;
+  }
+
+  .index-intro__name {
+    margin-bottom: 60px;
+  }
+
+  .index-intro__container2 {
+    flex-direction: column;
+  }
+
+  .index-intro__image-container {
+    margin-bottom: 70px;
+
+    &::before {
+      top: -30px;
+      left: -30px;
+      width: 141px;
+      height: 104px;
+    }
+
+    &::after {
+      bottom: -30px;
+      right: -30px;
+      width: 141px;
+      height: 104px;
+    }
+  }
+
+  .index-intro__image {
+    width: 264px;
+    height: 319px;
+  }
+
+  .index-intro__socials {
+    align-self: flex-end;
+    margin-right: -20px;
+  }
+
+  .index-intro__socials-item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .index-intro__socials-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: $main-dark;
+  }
 }
-
 
 @media (min-width: $desktop-width) {
   .index-intro__wrapper {
