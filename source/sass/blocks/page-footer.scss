@@ -1,0 +1,135 @@
+.page-footer {
+  color: white;
+  background-color: $main-dark;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+.page-footer__links-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  color: white;
+}
+
+.page-footer__socials-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__socials-link {
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.page-footer__socials-link--facebook {
+  background-image: url("../img/icon-facebook.svg");
+}
+
+.page-footer__socials-link--instagram {
+  background-image: url("../img/icon-instagram.svg");
+}
+
+.page-footer__socials-link--pinterest {
+  background-image: url("../img/icon-pinterest.svg");
+}
+
+.page-footer__socials-link--twitter {
+  background-image: url("../img/icon-twitter.svg");
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .page-footer__logo {
+    margin-bottom: 30px;
+  }
+
+  .page-footer__links-item {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+
+  .page-footer__socials-list {
+    align-self: flex-start;
+  }
+
+  .page-footer__socials-item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .page-footer__socials-link {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+.page-footer__logo {
+    margin-bottom: 40px;
+  }
+
+  .page-footer__links-item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .page-footer__socials-item:not(:last-child) {
+    margin-right: 39px;
+  }
+
+  .page-footer__socials-link {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__logo {
+    margin-bottom: 35px;
+  }
+
+  .page-footer__links-item:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .page-footer__link {
+    &:hover,
+    &:focus {
+      opacity: 0.75;
+    }
+  }
+
+  .page-footer__socials-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .page-footer__socials-link {
+    width: 20px;
+    height: 20px;
+
+    &:hover,
+    &:after {
+      opacity: 0.75;
+    }
+  }
+}
