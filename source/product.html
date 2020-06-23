@@ -6,6 +6,8 @@
   <title>DENIM | Nimes</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" as="font" href="fonts/work-sans-regular.woff2">
+  <link rel="preload" as="font" href="fonts/work-sans-v7-latin-500.woff2">
+  <link rel="preload" as="font" href="fonts/work-sans-v7-latin-700.woff2">
 </head>
 <body>
   <header class="page-header">
@@ -39,84 +41,86 @@
   <main class="page-main">
     <h1 class="visually-hidden">DENIM | Overals</h1>
     <section class="product">
-      <div class="gallery">
+      <div class="gallery product__gallery">
         <div class="gallery__top">
-          <button class="gallery__prev-image">Previous image</button>
-          <img src="" alt="" class="gallery__image">
-          <button class="gallery__next-image">Next image</button>
+          <button class="gallery__prev-button">Previous image</button>
+          <img class="gallery__big-image" src="img/product.jpg" alt="Woman in jeans overalls.">
+          <button class="gallery__next-button">Next image</button>
         </div>
         <ul class="gallery__previews">
           <li class="gallery__previews__item">
             <a href="" class="gallery__previews-link">
-              <img src="" alt="" class="gallery__previews-image">
+              <img class="gallery__previews-image" src="img/product-preview01.jpg" alt="Woman in jeans overalls.">
             </a>
           </li>
           <li class="gallery__previews__item">
             <a href="" class="gallery__previews-link">
-              <img src="" alt="" class="gallery__previews-image">
+              <img class="gallery__previews-image" src="img/product-preview02.jpg" alt="Woman in jeans overalls.">
             </a>
           </li>
           <li class="gallery__previews__item">
             <a href="" class="gallery__previews-link">
-              <img src="" alt="" class="gallery__previews-image">
+              <img class="gallery__previews-image" src="img/product-preview03.jpg" alt="Woman in jeans overalls.">
             </a>
           </li>
           <li class="gallery__previews__item">
             <a href="" class="gallery__previews-link">
-              <img src="" alt="" class="gallery__previews-image">
+              <img class="gallery__previews-image" src="img/product-preview04.jpg" alt="Woman in jeans overalls.">
             </a>
           </li>
         </ul>
       </div>
       <div class="product__specification">
-        <h2 class="product__title"></h2>
-        <p class="product__description"></p>
-        <form class="product__form">
-          <div class="product__fieldset">
-            <div class="product__legend">Color</div>
-            <ul class="colors">
-              <li class="colors__item">
-                <input class="colors__radio" type="radio">
-                <label class="colors__label" for=""></label>
-              </li>
-              <li class="colors__item">
-                <input class="colors__radio" type="radio">
-                <label class="colors__label" for=""></label>
-              </li>
-              <li class="colors__item">
-                <input type="radio" class="colors__radio">
-                <label for="" class="colors__label"></label>
-              </li>
-            </ul>
-          </div>
-          <div class="product__fieldset">
-            <div class="product__legend">Size</div>
-            <ul class="sizes">
-              <li class="sizes__item">
-                <input class="sizes__radio" type="radio">
-                <label class="sizes__label" for="">XS</label>
-              </li>
-              <li class="sizes__item">
-                <input class="sizes__radio" type="radio">
-                <label class="sizes__label" for="">S</label>
-              </li>
-              <li class="sizes__item">
-                <input type="radio" class="sizes__radio">
-                <label class="sizes__label" for="">M</label>
-              </li>
-              <li class="sizes__item">
-                <input type="radio" class="sizes__radio">
-                <label class="sizes__label" for="">L</label>
-              </li>
-              <li class="sizes__item">
-                <input type="radio" class="sizes__radio">
-                <label class="sizes__label" for="">XL</label>
-              </li>
-            </ul>
-          </div>
-          <p class="product__price">$ 160</p>
-          <button class="product__add-to-cart">Add to cart</button>
-        </form>
+        <div class="product__container">
+          <h2 class="product__title">Overalls</h2>
+          <p class="product__description">Overalls in washed organic cotton denim. Collar, button fly, and adjustable belt at waist. Chest pockets with flap. Long, gently flared sleeves and straight legs with front pockets and back pockets.</p>
+          <form class="product__form">
+            <div class="product__fieldset">
+              <div class="product__legend">Color</div>
+              <ul class="colors">
+                <li class="colors__item">
+                  <input class="colors__radio visually-hidden" type="radio" name="colors" id="color01" checked>
+                  <label class="colors__label colors__label--01" for="color01"></label>
+                </li>
+                <li class="colors__item">
+                  <input class="colors__radio visually-hidden" type="radio" name="colors" id="color02">
+                  <label class="colors__label colors__label--02" for="color02"></label>
+                </li>
+                <li class="colors__item">
+                  <input class="colors__radio visually-hidden" type="radio" name="colors" id="color03">
+                  <label class="colors__label colors__label--03" for="color03"></label>
+                </li>
+              </ul>
+            </div>
+            <div class="product__fieldset">
+              <div class="product__legend">Size</div>
+              <ul class="sizes">
+                <li class="sizes__item">
+                  <input class="sizes__radio visually-hidden" type="radio" name="sizes" id="sizeXS">
+                  <label class="sizes__label" for="sizeXS">XS</label>
+                </li>
+                <li class="sizes__item">
+                  <input class="sizes__radio visually-hidden" type="radio" name="sizes" id="sizeS" checked>
+                  <label class="sizes__label" for="sizeS">S</label>
+                </li>
+                <li class="sizes__item">
+                  <input class="sizes__radio visually-hidden" type="radio" name="sizes" id="sizeM">
+                  <label class="sizes__label" for="sizeM">M</label>
+                </li>
+                <li class="sizes__item">
+                  <input class="sizes__radio visually-hidden" type="radio" name="sizes" id="sizeL">
+                  <label class="sizes__label" for="sizeL">L</label>
+                </li>
+                <li class="sizes__item">
+                  <input class="sizes__radio visually-hidden" type="radio" name="sizes" id="sizeXL">
+                  <label class="sizes__label" for="sizeXL">XL</label>
+                </li>
+              </ul>
+            </div>
+            <p class="product__price">$ 160</p>
+            <button class="product__add-to-cart">Add to cart</button>
+          </form>
+        </div>
       </div>
     </section>
     <section class="shop-section">

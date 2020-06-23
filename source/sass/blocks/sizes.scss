@@ -1,0 +1,22 @@
+.sizes {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.sizes__item {
+  margin-right: 20px;
+}
+
+.sizes__label {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $gray;
+}
+
+.sizes__radio:checked + .sizes__label {
+  color: $main-dark;
+}
