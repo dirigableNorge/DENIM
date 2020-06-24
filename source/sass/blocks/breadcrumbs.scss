@@ -1,0 +1,38 @@
+.breadcrumbs {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  padding-right: 29px;
+
+  &:not(:last-child) {
+    &::after {
+      content: "/";
+
+      position: absolute;
+      top: 0;
+      right: 10px;
+    }
+  }
+}
+
+.breadcrumbs__link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $main-dark;
+
+}
+
+.breadcrumbs__link[href] {
+  color: $gray;
+}
+
+@media (min-width: $desktop-width) {
+  
+}

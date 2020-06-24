@@ -5,6 +5,8 @@
 @import "visually-hidden.scss";
 
 //blocks
+
+//index
 @import "blocks/button.scss";
 @import "blocks/wrapper.scss";
 @import "blocks/page-header.scss";
@@ -17,6 +19,9 @@
 @import "blocks/last-collection.scss";
 @import "blocks/category.scss";
 @import "blocks/page-footer.scss";
+
+//catalog
+@import "blocks/breadcrumbs.scss";
 
 //product
 @import "blocks/product.scss";

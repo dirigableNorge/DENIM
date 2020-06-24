@@ -16,3 +16,21 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+.page-header__bottom {
+   background-color: $main-gray;
+}
+
+.page-header__bottom .wrapper {
+  display: flex;
+}
+
+@media (min-width: $desktop-width){
+  .page-header__container {
+    padding-top: 73px;
+  }
+
+  .page-header__breadcrumbs {
+    margin-bottom: 35px;
+  }
+}
