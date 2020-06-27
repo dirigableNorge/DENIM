@@ -25,12 +25,148 @@
   display: flex;
 }
 
+.page-header__title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: $main-dark;
+}
+
 @media (min-width: $desktop-width){
+  .page-header__bottom .wrapper {
+    padding-left: 298px;
+  }
+
   .page-header__container {
     padding-top: 73px;
+    padding-right: 57px;
   }
 
   .page-header__breadcrumbs {
     margin-bottom: 35px;
+  }
+
+  .page-header__image-container {
+    position: relative;
+
+    padding-right: 30px;
+    padding-left: 30px;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+
+      width: 178px;
+      height: 135px;
+
+      background-image: url("../img/decor1.png");
+    }
+
+    &::after {
+      top: 0;
+      right: 0;
+      z-index: 6;
+
+      width: 232px;
+      height: 176px;
+
+      background-image: url("../img/decor1.png");
+    }
+  }
+
+  .page-header__image {
+    position: relative;
+    z-index: 7;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .page-header__bottom .wrapper {
+    padding-left: 45px;
+  }
+
+  .page-header__container {
+    padding-top: 79px;
+  }
+
+  .page-header__breadcrumbs {
+    margin-bottom: 35px;
+  }
+
+  .page-header__title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .page-header__image-container {
+    position: relative;
+
+    padding-right: 30px;
+    padding-left: 30px;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      background-repeat: no-repeat;
+    }
+
+    &::before {
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+
+      width: 178px;
+      height: 135px;
+
+      background-image: url("../img/decor1.png");
+    }
+
+    &::after {
+      top: 0;
+      right: 0;
+      z-index: 6;
+
+      width: 232px;
+      height: 176px;
+
+      background-image: url("../img/decor1.png");
+    }
+  }
+
+  .page-header__image {
+    position: relative;
+    z-index: 7;
+
+    width: 294px;
+    height: 260px;
+  }
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .page-header__bottom {
+    background-color: white;
+  }
+
+  .page-header__title {
+    display: none;
+  }
+
+  .page-header__image-container {
+    display: none;
   }
 }

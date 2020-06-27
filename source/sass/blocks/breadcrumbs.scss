@@ -8,9 +8,10 @@
 
 .breadcrumbs__item {
   position: relative;
-  padding-right: 29px;
 
   &:not(:last-child) {
+    padding-right: 29px;
+
     &::after {
       content: "/";
 
@@ -26,7 +27,6 @@
   font-size: 18px;
   line-height: 21px;
   color: $main-dark;
-
 }
 
 .breadcrumbs__link[href] {
@@ -34,5 +34,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  
+
+}
+
+@media (max-width: $mobile-width) {
+  .breadcrumbs__item:first-child {
+    display: none;
+  }
 }
