@@ -1,0 +1,35 @@
+.catalog-section .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-section__progress {
+    margin-bottom: 40px;
+  }
+
+  .catalog-section__load-button {
+    margin-bottom: 130px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width - 1px) {
+  .catalog-section__progress {
+    margin-bottom: 40px;
+  }
+
+  .catalog-section__load-button {
+    margin-bottom: 130px;
+  }
+}
+
+@media (max-width: $tablet-width - 1px) {
+  .catalog-section__progress {
+    margin-bottom: 30px;
+  }
+
+  .catalog-section__load-button {
+    margin-bottom: 60px;
+  }
+}

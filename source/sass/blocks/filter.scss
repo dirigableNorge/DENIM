@@ -1,0 +1,11 @@
+.filter--closed {
+  .filter__container {
+    display: none;
+  }
+}
+
+.filter--opened {
+  .filter__container {
+    display: block;
+  }
+}
