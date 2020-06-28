@@ -4,8 +4,65 @@
   }
 }
 
+.filter .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.filter__button {
+  position: relative;
+
+  padding: 16px 18px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: $main-dark;
+  text-align: left;
+
+  background-color: white;
+  border: 2px solid $main-dark;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 21px;
+    right: 18px;
+
+    width: 16px;
+    height: 8px;
+
+    background-image: url("../img/icon-drop-down.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  cursor: pointer;
+}
+
 .filter--opened {
+  .filter__button {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+
   .filter__container {
     display: block;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .filter {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .filter__button {
+    width: 243px;
   }
 }
